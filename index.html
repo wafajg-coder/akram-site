@@ -109,6 +109,19 @@ section{padding:100px 56px}
 .produit-tag{display:inline-block;margin-top:16px;font-size:12px;letter-spacing:2px;text-transform:uppercase;color:var(--or);font-weight:500;transition:transform .3s var(--ease)}
 .produit-card:hover .produit-tag{transform:translateX(5px)}
 
+.services-header{max-width:640px;margin:0 auto;text-align:center}
+.services-grid{display:grid;grid-template-columns:1fr auto 1fr;gap:0;max-width:920px;margin:64px auto 0;align-items:start}
+.service-card{padding:0 36px;text-align:left}
+.service-icon{width:56px;height:56px;border-radius:50%;background:var(--gris-clair);display:flex;align-items:center;justify-content:center;color:var(--or);margin-bottom:22px;transition:transform .3s var(--ease)}
+.service-icon .icon{width:24px;height:24px}
+.service-card:hover .service-icon{transform:translateY(-4px)}
+.service-titre{font-family:'DM Serif Display',serif;font-size:23px;color:var(--noir);margin-bottom:12px}
+.service-desc{font-size:15px;color:var(--texte-muted);line-height:1.75;font-weight:300}
+.service-divider{width:1px;background:rgba(0,0,0,0.08);align-self:stretch;margin:8px 0}
+.services-tags{display:flex;flex-wrap:wrap;justify-content:center;gap:10px;margin:56px auto 0;max-width:760px}
+.services-tags span{font-size:12px;letter-spacing:1.5px;text-transform:uppercase;color:var(--texte-muted);border:1px solid rgba(0,0,0,0.1);border-radius:999px;padding:9px 20px;transition:border-color .3s var(--ease),color .3s var(--ease)}
+.services-tags span:hover{border-color:var(--or);color:var(--or)}
+
 .pourquoi-inner{display:grid;grid-template-columns:1fr 1fr;gap:100px;align-items:center}
 .avantages{display:flex;flex-direction:column}
 .avantage{display:flex;gap:24px;padding:32px 0;border-bottom:1px solid rgba(0,0,0,0.07);transition:padding-left .3s var(--ease)}
@@ -184,6 +197,9 @@ footer{background:var(--noir);padding:44px 56px;display:grid;grid-template-colum
   .hero::after{display:none}
   .produits-grid{grid-template-columns:repeat(2,1fr)}
   .produits-header{grid-template-columns:1fr;gap:24px;align-items:start}
+  .services-grid{grid-template-columns:1fr;gap:32px;margin-top:40px}
+  .service-card{padding:0}
+  .service-divider{display:none}
   .pourquoi-inner{grid-template-columns:1fr;gap:48px}
   .schema-flow{grid-template-columns:1fr;gap:4px}
   .schema-arrow{width:1px;height:28px;margin:0 auto;background:linear-gradient(180deg, rgba(200,164,90,0.5), rgba(200,164,90,0.15))}
@@ -213,6 +229,7 @@ footer{background:var(--noir);padding:44px 56px;display:grid;grid-template-colum
   <div class="logo">Metal<span>Pro</span> FR</div>
   <ul class="nav-links" id="nav-links">
     <li><a href="#produits">Produits</a></li>
+    <li><a href="#services">Nos services</a></li>
     <li><a href="#pourquoi">Pourquoi nous</a></li>
     <li><a href="#import">Notre modèle</a></li>
     <li><a href="#zones">Livraison</a></li>
@@ -347,6 +364,35 @@ footer{background:var(--noir);padding:44px 56px;display:grid;grid-template-colum
         <div class="produit-tag">Nous contacter →</div>
       </div>
     </div>
+  </div>
+</section>
+
+<section id="services">
+  <div class="services-header reveal">
+    <div class="eyebrow" style="justify-content:center">Notre accompagnement</div>
+    <h2 class="titre-section">Étude seule ou<br>projet clé en main</h2>
+    <div class="divider" style="margin:24px auto 0"></div>
+    <p class="sous-titre" style="margin:16px auto 0;max-width:600px">Que vous ayez besoin d'une étude technique seule ou d'un accompagnement complet jusqu'à la fabrication et la pose, notre atelier s'adapte à votre projet.</p>
+  </div>
+  <div class="services-grid">
+    <div class="service-card reveal">
+      <div class="service-icon"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5V5a2 2 0 0 1 2-2h9l5 5v11.5a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2z"/><path d="M14 3v5h5M8 13h8M8 17h5"/></svg></div>
+      <div class="service-titre">Étude technique seule</div>
+      <p class="service-desc">Conception, carnets de détails, dossier de fabrication et notes de calcul. Vous pilotez vous-même la réalisation et la pose, en toute autonomie — nous fournissons le dossier complet.</p>
+    </div>
+    <div class="service-divider reveal reveal-d1"></div>
+    <div class="service-card reveal reveal-d2">
+      <div class="service-icon"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M14.5 3.5l6 6L9 21l-6 1.5L4.5 16.5z"/><path d="M13 5l6 6"/></svg></div>
+      <div class="service-titre">Accompagnement complet</div>
+      <p class="service-desc">De la conception à la fabrication, jusqu'à la pose sur site. Un projet clé en main avec un seul interlocuteur, du premier plan à la réception du chantier.</p>
+    </div>
+  </div>
+  <div class="services-tags reveal reveal-d3">
+    <span>Garde-corps</span>
+    <span>Clôtures</span>
+    <span>Portails</span>
+    <span>Barrières</span>
+    <span>Structures métalliques</span>
   </div>
 </section>
 
