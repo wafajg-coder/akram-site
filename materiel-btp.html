@@ -23,8 +23,13 @@
 <link rel="stylesheet" href="assets/css/common.css">
 <script src="assets/js/main.js" defer></script>
 <style>
-.hero{padding:120px 56px 60px;background:var(--gris-fonce);position:relative;overflow:hidden}
-.hero::before{content:'';position:absolute;inset:0;background-image:radial-gradient(rgba(200,164,90,0.14) 1px, transparent 1px);background-size:26px 26px;opacity:0.5;pointer-events:none}
+.hero{padding:120px 56px 60px;position:relative;overflow:hidden;
+  background:
+    radial-gradient(ellipse 900px 500px at 10% -30%, rgba(200,164,90,0.2), transparent 60%),
+    radial-gradient(ellipse 700px 500px at 105% 120%, rgba(200,164,90,0.12), transparent 55%),
+    linear-gradient(160deg, var(--noir) 0%, var(--gris-fonce) 55%, var(--gris-mid) 100%);
+}
+.hero::before{content:'';position:absolute;inset:0;background-image:radial-gradient(rgba(200,164,90,0.12) 1px, transparent 1px);background-size:28px 28px;opacity:0.4;pointer-events:none}
 .hero *{position:relative}
 .titre{font-family:'DM Serif Display',serif;font-size:clamp(40px,5vw,64px);line-height:1.1;color:var(--blanc);margin-bottom:16px}
 .titre em{font-style:italic;color:var(--or)}
