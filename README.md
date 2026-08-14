@@ -69,3 +69,16 @@ Site vitrine B2B statique (3 pages HTML : `index.html`, `materiel-btp.html`, `st
 12. Ajouter `rel="preconnect"` vers Google Fonts.
 13. Étoffer la galerie "structures sur mesure" avec davantage de réalisations.
 14. Ajouter une page 404.
+
+
+# Ce qui a été fait :
+- Responsive : ajout de media queries sur toutes les pages (le site était totalement non-responsive avant, 0 @media dans le CSS d'origine).
+- Performance : images sorties du base64 inline vers des fichiers WebP compressés avec loading="lazy" — les pages HTML sont passées de ~2,3 Mo à ~40 Ko au total.
+- CSS : extraction du CSS commun (nav, footer, boutons, variables) dans assets/css/common.css, fini la duplication à 3 endroits.
+- SEO : meta description + canonical + Open Graph/Twitter Card sur chaque page, JSON-LD LocalBusiness sur l'accueil, robots.txt.
+- Formulaire : envoi en AJAX avec vrai message de succès/erreur visible (avant, le message ne s'affichait jamais), champ honeypot anti-spam, labels accessibles.
+- Téléphone : cliquable (tel:) et format corrigé (+33 6 83 20 15 41).
+- Pages légales : mentions-legales.html, cgv.html, confidentialite.html créées, liens du footer réparés (pointaient vers #).
+- 404.html ajouté, skip-links et focus visible pour l'accessibilité clavier.
+
+Point à traiter de ton côté : dans mentions-legales.html, le champ capital social est marqué [à compléter] — je n'avais pas cette donnée et il est légalement obligatoire pour une SAS. Et les CGV sont un brouillon à faire valider par un professionnel du droit avant publication réelle (mention ajoutée dans la page).
