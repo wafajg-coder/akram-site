@@ -25,8 +25,8 @@ nav.scrolled{box-shadow:0 8px 30px rgba(14,15,14,0.07)}
 .nav-right{display:flex;align-items:center;gap:16px}
 .nav-cta{background:var(--noir);color:var(--blanc);font-family:'DM Sans',sans-serif;font-weight:500;font-size:15px;padding:12px 30px;border:none;cursor:pointer;border-radius:999px;text-decoration:none;transition:background .25s var(--ease),transform .25s var(--ease)}
 .nav-cta:hover{background:var(--gris-mid);transform:translateY(-1px)}
-.nav-email{font-size:14px;color:var(--noir);text-decoration:none;transition:color .2s}
-.nav-email:hover{color:var(--or)}
+.nav-email{font-size:15px;color:var(--noir);text-decoration:none;transition:color .2s}
+.nav-email:hover{color:var(--noir)}
 .btn-retour{display:inline-flex;align-items:center;gap:10px;font-size:15px;color:var(--texte-muted);text-decoration:none;transition:color .2s,gap .2s;font-weight:500}
 .btn-retour:hover{color:var(--or);gap:13px}
 .eyebrow{font-size:12px;letter-spacing:3px;text-transform:uppercase;color:var(--or);margin-bottom:16px;font-weight:500;display:flex;align-items:center;gap:10px}
