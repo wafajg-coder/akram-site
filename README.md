@@ -83,54 +83,9 @@ Site vitrine B2B statique (3 pages HTML : `index.html`, `materiel-btp.html`, `st
 
 Point à traiter de ton côté : dans mentions-legales.html, le champ capital social est marqué [à compléter] — je n'avais pas cette donnée et il est légalement obligatoire pour une SAS. Et les CGV sont un brouillon à faire valider par un professionnel du droit avant publication réelle (mention ajoutée dans la page).
 
-## Référencement Google (SEO) : guide pratique
+## Référencement (SEO) : guide pratique
 
-Les bases techniques (meta description, canonical, Open Graph, JSON-LD, robots.txt, sitemap.xml) sont déjà en place sur le site. Elles sont nécessaires mais pas suffisantes : elles permettent à Google de bien comprendre et afficher les pages, mais ne génèrent pas à elles seules du trafic. Voici, dans l'ordre de priorité, ce qui fait vraiment progresser le classement pour un site B2B local comme celui-ci.
-
-### 1. Google Business Profile — le levier n°1 pour une entreprise locale
-Pour une activité B2B locale (métallerie, BTP), la fiche Google Business Profile (ex-Google My Business) pèse souvent plus lourd que le site lui-même dans les résultats de recherche locaux ("métallerie [ville]", "structures métalliques sur mesure [région]").
-- Créer/revendiquer la fiche sur [business.google.com](https://business.google.com), avec l'adresse exacte, le téléphone (`+33 6 83 20 15 41`), les horaires, la catégorie d'activité précise.
-- Ajouter des photos réelles de chantiers/réalisations (le dossier `photos/` du repo est une bonne source).
-- Faire correspondre **exactement** nom / adresse / téléphone (NAP) entre la fiche Google, le site et les mentions légales — toute incohérence nuit au référencement local.
-- Demander des avis clients après chaque chantier et y répondre systématiquement (Google valorise l'activité récente sur la fiche).
-- Publier occasionnellement des posts Google Business (nouvelle réalisation, offre) — signal d'activité supplémentaire.
-
-### 2. Google Search Console — indispensable pour piloter le SEO
-- Vérifier la propriété du site sur [search.google.com/search-console](https://search.google.com/search-console) (via le fichier DNS ou une balise meta).
-- Soumettre `sitemap.xml` dans Search Console (Sitemaps > Ajouter).
-- Utiliser l'outil d'inspection d'URL pour demander l'indexation de chaque page après une mise à jour importante.
-- Surveiller régulièrement :
-  - **Couverture** : pages indexées vs exclues, erreurs d'exploration.
-  - **Performances** : requêtes qui génèrent des impressions/clics, position moyenne — c'est la meilleure source pour savoir sur quels mots-clés le site apparaît déjà (même en position 15-30) et qu'il faut renforcer.
-  - **Core Web Vitals / Expérience** : alertes de performance ou de mobile-friendliness.
-
-### 3. Contenu et mots-clés
-Le site actuel est très orienté "vitrine + conversion" (3 pages), ce qui limite le nombre de requêtes sur lesquelles il peut apparaître. Google indexe et classe des **pages**, pas un site dans son ensemble — plus il y a de pages pertinentes, plus il y a de portes d'entrée depuis la recherche.
-- Identifier les requêtes réelles des clients (ex. "garde-corps métallique sur mesure", "portail industriel [ville]", "escalier métallique BTP") avec Google Search Console (section Performances), Google Keyword Planner, ou simplement en écoutant le vocabulaire des clients/devis.
-- Créer une page dédiée par type de réalisation ou de service plutôt qu'une seule page "structures sur mesure" généraliste (ex. `garde-corps.html`, `portails-industriels.html`, `escaliers-metalliques.html`). Chaque page cible un mot-clé principal, avec un titre `<h1>`, une meta description et des photos spécifiques.
-- Ajouter une page ou section dédiée à la zone géographique desservie (ville/département), car le SEO local repose beaucoup sur la présence du nom de la ville dans le contenu, les titres et les balises meta.
-- Rédiger un contenu texte substantiel (pas seulement des photos + CTA) : description du savoir-faire, matériaux utilisés, process, garanties — Google a besoin de texte réel pour comprendre le sujet d'une page.
-- Mettre à jour le contenu régulièrement (nouvelles réalisations) : la fraîcheur du contenu est un signal positif, notamment couplé aux posts Google Business.
-
-### 4. Netlinking (backlinks)
-Les liens entrants depuis d'autres sites restent un des facteurs de classement les plus importants, en particulier pour sortir des premières positions locales.
-- S'inscrire dans les annuaires professionnels du BTP/métallerie et les chambres consulaires (CCI, fédérations du bâtiment).
-- Demander des liens depuis les sites de fournisseurs, partenaires, ou clients qui acceptent de citer l'entreprise (référence chantier).
-- Éviter l'achat de liens en masse ou les annuaires de faible qualité : Google pénalise les profils de liens artificiels.
-
-### 5. Technique et performance (déjà largement traité, à maintenir)
-- Le passage des images en WebP compressées + `loading="lazy"` et la suppression du base64 (voir "Ce qui a été fait") améliorent directement les Core Web Vitals (LCP notamment), un facteur de classement officiel de Google.
-- Continuer à vérifier avec [PageSpeed Insights](https://pagespeed.web.dev/) après chaque changement significatif.
-- S'assurer que chaque nouvelle page créée est ajoutée à `sitemap.xml` et respecte la structure sémantique existante (`h1` unique, `nav`, balises meta complètes, Open Graph).
-- Vérifier régulièrement l'absence de liens cassés (404) et de contenu dupliqué entre pages.
-
-### 6. Suivi dans le temps
-Le SEO est un travail continu, pas une action ponctuelle :
-- Contrôler mensuellement les positions/impressions dans Search Console.
-- Ajouter une réalisation ou un article par mois si possible (nouvelle page ou section) pour montrer une activité régulière au moteur de recherche.
-- Réévaluer les mots-clés ciblés en fonction des requêtes qui remontent réellement dans les rapports de performance.
-
-**Priorité recommandée pour ce projet** : Google Business Profile (impact rapide et fort pour une activité locale) → soumission du sitemap dans Search Console → création de pages de service dédiées avec du contenu texte → netlinking local.
+Les bases techniques (meta description, canonical, Open Graph, JSON-LD, robots.txt, sitemap.xml) sont déjà en place sur le site. Le plan d'action complet — Google Search Console, Google Business Profile, contenu et mots-clés par page, balisage structuré, backlinks, et une partie dédiée aux autres moteurs (Bing, Qwant, moteurs IA) — est dans [SEO-GUIDE.md](SEO-GUIDE.md).
 
 ## Google Ads : guide pratique
 
